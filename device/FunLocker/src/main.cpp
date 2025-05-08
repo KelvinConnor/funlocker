@@ -79,7 +79,7 @@ void powerOffServo()
 // Helps in case of power outages
 void updateStoredStatus()
 {
-  preferences.begin("funcooker", false);
+  preferences.begin("funlocker", false);
   Serial.print("UPDATING PREF STATUS TO ");
   preferences.putBool("locked", isLocked);
   Serial.println(isLocked ? "LOCKED" : "UNLOCKED");
